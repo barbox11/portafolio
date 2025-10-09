@@ -1,0 +1,104 @@
+.habilidades-section {
+    padding: 4rem 6rem;
+    background-color: #030a16;
+    color: white;
+    }
+
+    .habilidades-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    }
+    
+    .title-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    }
+
+    .title-line h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+    }
+
+    .hash {
+    color: #5c6bff;
+    }
+
+    /* Línea decorativa */
+    .line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #5c6bff, transparent);
+    opacity: 0.4;
+    }
+
+    /* Enlace de "View all" */
+    .view-all {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-left: 20px;
+    transition: color 0.3s, transform 0.3s;
+    }
+
+    .view-all:hover {
+    color: #5c6bff;
+    transform: translateX(5px);
+    }
+
+    .habilidades-header h2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+    .hash {
+    color: #4a4aff;
+    margin-right: 6px;
+    }
+
+    .habilidades-header h2::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: #1b2b4d;
+    margin-left: 10px;
+    }
+
+    .habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espacio interno */
+}
+
+.habilidad {
+    display: flex;
+    align-items: center;
+    background-color: #1b1f2a;
+    border-radius: 10px;
+    padding: 0.6rem 1rem;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    min-width: 120px; /* Ancho mínimo para uniformidad */
+    justify-content: center; /* Centrar contenido */
+}
+
+    .habilidad:hover {
+    background-color: #2a2f3f;
+    transform: scale(1.05);
+    }
+
+    .habilidad img {
+    width: 20px;
+    height: 20px;
+    }

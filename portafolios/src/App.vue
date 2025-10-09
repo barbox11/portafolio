@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Header :section="section" @changeSection="section = $event" />
-    <Hero v-if="section === 'inicio'" @contact="section = 'contacto'" />
+      <Hero @contact="section = 'contacto'" />
+      <Proyectos />
+      <Habilidades />
+  
   </div>
 </template>
 
@@ -10,8 +13,8 @@ import { ref } from 'vue'
 import Header from './components/header.vue'
 import Hero from './components/hero.vue'
 import Proyectos from './components/proyectos.vue'
+import Habilidades from './components/habilidades.vue'
 
-const section = ref('inicio')
 </script>
 
 <style>
