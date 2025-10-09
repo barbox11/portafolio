@@ -20,33 +20,6 @@
     })
     </script>
 
-    <style scoped>
-    .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    color: white;
-    }
-
-    .logo {
-    font-size: 1.8rem;
-    }
-
-    nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    }
-
-    nav a {
-    text-decoration: none;
-    color: #aaa;
-    transition: 0.3s;
-    }
-
-    nav a:hover,
-    nav a.active {
-    color: #5c6bff;
-    }
+    <style src="../assets/header.css" scoped>
+    
     </style>
