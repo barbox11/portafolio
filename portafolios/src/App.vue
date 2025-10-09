@@ -9,6 +9,7 @@
 import { ref } from 'vue'
 import Header from './components/header.vue'
 import Hero from './components/hero.vue'
+import Proyectos from './components/proyectos.vue'
 
 const section = ref('inicio')
 </script>
