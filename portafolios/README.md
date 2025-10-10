@@ -1,25 +1,22 @@
-# portafolios
+Portafolio - Plantilla de Desarrollo con Vue 3 y Vite
+Esta es la presentacion del proyecto con Vue 3 en Vite.
 
-This template should help get you started developing with Vue 3 in Vite.
+Configuración Recomendada del IDE
+VS Code + Vue (Official) (y desactiva Vetur).
 
-## Recommended IDE Setup
+Configuración Recomendada del Navegador
+Navegadores basados en Chromium (Chrome, Edge, Brave, etc.):
+Vue.js devtools
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Activar el Formateador de Objetos Personalizado en Chrome DevTools
 
-## Recommended Browser Setup
+Firefox:
+Vue.js devtools
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Activar el Formateador de Objetos Personalizado en Firefox DevTools
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Personalización de la Configuración
+Consulta la Referencia de Configuración de Vite.
 
 ```sh
 npm install
