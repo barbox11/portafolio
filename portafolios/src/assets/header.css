@@ -63,9 +63,12 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 50%;
         height: 100vh;
-        background-color: #030a16;
+        background-color: rgba(3, 10, 22, 0.95); /*  transparencia */
+        backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+
         transition: 0.3s ease;
         z-index: 1000;
     }
