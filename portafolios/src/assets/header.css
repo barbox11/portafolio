@@ -1,15 +1,15 @@
-    .header {
-    position: sticky; /* Se queda pegado al llegar arriba */
-  top: 0; /* Punto donde se “pega” */
-  z-index: 1000; /* Para que quede encima del contenido */
-  background-color: #030a16; /* Fondo sólido para que no se vea transparente */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  color: white;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
+        .header {
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    background-color: #030a16; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
 
     .logo {
     font-size: 1.8rem;
@@ -38,6 +38,10 @@
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    position: absolute; 
+    right: 2rem; 
+    top: 50%; 
+    transform: translateY(-50%); 
     }
 
     .menu-toggle span {
@@ -48,24 +52,67 @@
     }
 
     /*  RESPONSIVE  */
-    @media (max-width: 768px) {
-    nav ul {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #030a16;
-        flex-direction: column;
-        width: 200px;
+    /*  RESPONSIVE  */
+@media (max-width: 768px) {
+    .header {
         padding: 1rem;
-        border-radius: 8px;
-        display: none;
+        position: relative;
     }
 
-    nav ul.active {
-        display: flex;
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #030a16;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+    nav.active {
+        right: 0;
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 2rem;
+        gap: 2rem;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
     }
 
     .menu-toggle {
         display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
     }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: 0.3s;
     }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}

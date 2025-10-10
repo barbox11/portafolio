@@ -5,7 +5,7 @@
         </div>
 
         <!-- Botón hamburguesa -->
-        <div class="menu-toggle" @click="toggleMenu">
+        <div class="menu-toggle" :class="{ 'active': menuAbierto }" @click="toggleMenu">
         <span></span>
         <span></span>
         <span></span>
@@ -13,10 +13,10 @@
 
         <nav>
         <ul :class="{ open: menuAbierto }">
-            <a href="#" :class="{ active: section === 'inicio' }" @click="cambiar('inicio')">#Inicio</a>
-            <a href="#proyectos" :class="{ active: section === 'trabajos' }" @click="cambiar('trabajos')">#Trabajos</a>
-            <a href="#sobremi" :class="{ active: section === 'sobre-mi' }" @click="cambiar('sobre-mi')">#Sobre mí</a>
-            <a href="#fotter" :class="{ active: section === 'contacto' }" @click="cambiar('contacto')">#Contáctame</a>
+            <li><a href="#" :class="{ active: section === 'inicio' }" @click="cambiar('inicio')">#Inicio</a></li>
+                <li><a href="#proyectos" :class="{ active: section === 'trabajos' }" @click="cambiar('trabajos')">#Trabajos</a></li>
+                <li><a href="#sobremi" :class="{ active: section === 'sobre-mi' }" @click="cambiar('sobre-mi')">#Sobre mí</a></li>
+                <li><a href="#fotter" :class="{ active: section === 'contacto' }" @click="cambiar('contacto')">#Contáctame</a></li>
         </ul>
         </nav>
     </header>
