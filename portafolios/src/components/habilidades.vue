@@ -2,7 +2,7 @@
     <section class="habilidades-section">
         <div class="habilidades-header">
         <div class="title-line">
-            <h2><span class="hash">#</span>Proyectos</h2>
+            <h2><span class="hash">#</span>Habilidades</h2>
             <div class="line"></div>
         </div>
         <a href="#" class="view-all">View all →</a>

@@ -4,6 +4,7 @@
       <Hero @contact="section = 'contacto'" />
       <Proyectos />
       <Habilidades />
+      <Sobremi />
   
   </div>
 </template>
@@ -14,6 +15,7 @@ import Header from './components/header.vue'
 import Hero from './components/hero.vue'
 import Proyectos from './components/proyectos.vue'
 import Habilidades from './components/habilidades.vue'
+import Sobremi from './components/sobremi.vue'
 
 </script>
 
