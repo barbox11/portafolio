@@ -5,6 +5,7 @@
       <Proyectos />
       <Habilidades />
       <Sobremi />
+      <Fotter />
   
   </div>
 </template>
@@ -16,7 +17,7 @@ import Hero from './components/hero.vue'
 import Proyectos from './components/proyectos.vue'
 import Habilidades from './components/habilidades.vue'
 import Sobremi from './components/sobremi.vue'
-
+import Fotter from './components/fotter.vue'
 </script>
 
 <style>
