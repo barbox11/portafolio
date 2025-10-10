@@ -11,13 +11,13 @@
         <span></span>
         </div>
 
-        <nav>
-        <ul :class="{ open: menuAbierto }">
-            <li><a href="#" :class="{ active: section === 'inicio' }" @click="cambiar('inicio')">#Inicio</a></li>
+        <nav :class="{ 'active': menuAbierto }">
+            <ul>
+                <li><a href="#" :class="{ active: section === 'inicio' }" @click="cambiar('inicio')">#Inicio</a></li>
                 <li><a href="#proyectos" :class="{ active: section === 'trabajos' }" @click="cambiar('trabajos')">#Trabajos</a></li>
                 <li><a href="#sobremi" :class="{ active: section === 'sobre-mi' }" @click="cambiar('sobre-mi')">#Sobre mí</a></li>
                 <li><a href="#fotter" :class="{ active: section === 'contacto' }" @click="cambiar('contacto')">#Contáctame</a></li>
-        </ul>
+            </ul>
         </nav>
     </header>
     </template>
