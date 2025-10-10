@@ -21,8 +21,8 @@
     left: var(--x);
     width: var(--size);
     height: var(--size);
-    background-color: rgba(1, 221, 166, 0.6);
-    border-radius: 50%;
+    background-color: rgba(83, 71, 255, 0.6);
+    border-radius: 80%;
     filter: blur(1px);
     animation: float var(--duration) ease-in-out infinite;
     }
@@ -99,4 +99,96 @@
     font-size: 1rem;
     position: relative;
     z-index: 1;
+    }
+/* ------------ Responsive Design ------------- */
+
+    /* Tablets y pantallas medianas */
+    @media (max-width: 1024px) {
+    .sobremi-section {
+        padding: 3rem 4rem;
+    }
+
+    .sobremi-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .title-line {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .title-line h2 {
+        font-size: 1.4rem;
+    }
+
+    .view-all {
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .sobremi-content {
+        max-width: 900px;
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+    }
+
+    /* Celulares grandes y medianos */
+    @media (max-width: 768px) {
+    .sobremi-section {
+        padding: 2.5rem 2rem;
+    }
+
+    .sobremi-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .title-line {
+        justify-content: center;
+    }
+
+    .title-line h2 {
+        font-size: 1.3rem;
+    }
+
+    .view-all {
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .sobremi-content {
+        padding: 15px;
+        font-size: 0.95rem;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .line {
+        display: none; /* Se oculta la línea para que no rompa el diseño en pantallas pequeñas */
+    }
+    }
+
+    /* Celulares pequeños */
+    @media (max-width: 480px) {
+    .sobremi-section {
+        padding: 2rem 1.2rem;
+    }
+
+    .title-line h2 {
+        font-size: 1.1rem;
+    }
+
+    .sobremi-content {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .view-all {
+        font-size: 0.85rem;
+    }
     }

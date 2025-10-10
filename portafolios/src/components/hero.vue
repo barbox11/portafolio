@@ -29,9 +29,9 @@
     methods: {
         // Genera posiciones aleatorias para las gotas
         randomPosition() {
-        const size = Math.random() * 40 + 10; // tamaño entre 10 y 50 px
+        const size = Math.random() * 40 + 10; // tamaño 
         const left = Math.random() * 100; // posición horizontal
-        const delay = Math.random() * 5; // retraso aleatorio
+        const delay = Math.random() * 4; // retraso aleatorio
         const duration = Math.random() * 10 + 5; // duración variable
 
         return {

@@ -1,15 +1,21 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    color: white;
+    .header {
+    position: sticky; /* Se queda pegado al llegar arriba */
+  top: 0; /* Punto donde se “pega” */
+  z-index: 1000; /* Para que quede encima del contenido */
+  background-color: #030a16; /* Fondo sólido para que no se vea transparente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     .logo {
     font-size: 1.8rem;
     }
 
+    /*  NAV DESKTOP  */
     nav ul {
     display: flex;
     list-style: none;
@@ -18,11 +24,48 @@
 
     nav a {
     text-decoration: none;
-    color: #aaa;
+    color: #fcfcfc;
     transition: 0.3s;
     }
 
-    nav a:hover,
-    nav a.active {
-    color: #5c6bff;
+    nav a:hover{
+    color: #3df89b;
+    }
+
+    /*  BOTÓN HAMBURGUESA  */
+    .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    }
+
+    .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+    }
+
+    /*  RESPONSIVE  */
+    @media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #030a16;
+        flex-direction: column;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
     }

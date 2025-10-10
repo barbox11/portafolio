@@ -102,3 +102,121 @@
     width: 20px;
     height: 20px;
     }
+
+    /* -------------- Responsive Design --------------- */
+
+    /* Tablets y pantallas medianas */
+    @media (max-width: 1024px) {
+    .habilidades-section {
+        padding: 3rem 4rem;
+    }
+
+    .habilidades-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .title-line {
+        justify-content: flex-start;
+    }
+
+    .title-line h2 {
+        font-size: 1.4rem;
+    }
+
+    .view-all {
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .habilidades-grid {
+        gap: 0.8rem;
+        padding: 15px;
+    }
+
+    .habilidad {
+        min-width: 110px;
+        padding: 0.5rem 0.9rem;
+    }
+
+    .habilidad img {
+        width: 18px;
+        height: 18px;
+    }
+    }
+
+    /* Celulares grandes y medianos */
+    @media (max-width: 768px) {
+    .habilidades-section {
+        padding: 2.5rem 2rem;
+    }
+
+    .habilidades-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .title-line {
+        justify-content: center;
+    }
+
+    .title-line h2 {
+        font-size: 1.3rem;
+    }
+
+    .habilidades-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .habilidad {
+        width: 80%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .habilidad img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .view-all {
+        font-size: 0.9rem;
+    }
+    }
+
+    /* Celulares pequeños */
+    @media (max-width: 480px) {
+    .habilidades-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .title-line h2 {
+        font-size: 1.1rem;
+    }
+
+    .habilidades-grid {
+        gap: 0.6rem;
+    }
+
+    .habilidad {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .habilidad img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .view-all {
+        font-size: 0.85rem;
+    }
+    }

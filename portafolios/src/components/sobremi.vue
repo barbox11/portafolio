@@ -4,13 +4,13 @@
         <div class="particles-background">
         <div
             class="particle"
-            v-for="n in 200"
+            v-for="n in 300"
             :key="n"
             :style="{
             '--x': Math.random() * 100 + '%',
             '--y': Math.random() * 100 + '%',
-            '--size': Math.random() * 3 + 1 + 'px',
-            '--duration': Math.random() * 20 + 10 + 's'
+            '--size': Math.random() * 5 + 2 + 'px',
+            '--duration': Math.random() * 10 + 5 + 's'
             }"
         ></div>
         </div>

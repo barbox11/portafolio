@@ -1,0 +1,299 @@
+/* Fondo y estructura */
+    .contact-section {
+    padding: 4rem 6rem;
+    background-color: #030a16;
+    color: #ffffff;
+    font-family: "Fira Code", monospace;
+    }
+
+    /* Encabezado con línea */
+    .contact-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    }
+
+    .title-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    }
+
+    .social-media {
+    text-align: left;
+    min-width: 200px;
+}
+
+.social-media h3 {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+    /* Enlace de "View all" */
+    .view-all {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-left: 20px;
+    transition: color 0.3s, transform 0.3s;
+    }
+
+    .view-all:hover {
+    color: #5c6bff;
+    transform: translateX(5px);
+    }
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.icons a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+    .title-line h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    white-space: nowrap;
+    }
+
+    .hash {
+    color: #5c6bff;
+    }
+
+    .line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #5c6bff, transparent);
+    opacity: 0.4;
+    }
+
+    /* Contenido principal */
+    .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    }
+
+    /* Información de contacto */
+    .contact-info {
+    flex: 1;
+    min-width: 250px;
+    }
+
+    .email {
+    margin-bottom: 0.5rem;
+    }
+
+    .email i {
+    color: #5c6bff;
+    margin-right: 8px;
+    }
+
+    .email a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s;
+    }
+
+    .email a:hover {
+    color: #5c6bff;
+    }
+
+    .role {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    }
+
+    /* Redes sociales */
+    .social-media {
+    text-align: right;
+    min-width: 200px;
+    }
+
+    .social-media h3 {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    }
+
+    .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    }
+
+    .icons a {
+    color: #9ca3af;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+    }
+
+    .icons a:hover {
+    color: #5c6bff;
+    transform: scale(1.1);
+    }
+
+    /* ----------- Responsive Design  ---------- */
+
+    /* Tablets y pantallas medianas */
+    @media (max-width: 1024px) {
+    .contact-section {
+        padding: 3rem 4rem;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .title-line {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .title-line h2 {
+        font-size: 1.4rem;
+    }
+
+    .view-all {
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .social-media {
+        text-align: left;
+    }
+
+    .icons {
+        justify-content: flex-start;
+    }
+    }
+
+    /* Celulares grandes y medianos */
+    @media (max-width: 768px) {
+    .contact-section {
+        padding: 2.5rem 2rem;
+        text-align: center;
+    }
+
+    .contact-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .title-line {
+        justify-content: center;
+    }
+
+    .title-line h2 {
+        font-size: 1.3rem;
+    }
+
+    .line {
+        display: none; /* Ocultamos la línea decorativa para ahorrar espacio */
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-info {
+        min-width: 100%;
+    }
+
+    .email {
+        font-size: 0.95rem;
+    }
+
+    .role {
+        font-size: 0.9rem;
+    }
+
+    .social-media {
+        text-align: center;
+    }
+
+    .social-media h3 {
+        margin-bottom: 0.8rem;
+    }
+
+    .icons {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .icons img {
+        width: 22px;
+        height: 22px;
+    }
+    }
+
+    /* Celulares pequeños */
+    @media (max-width: 480px) {
+    .contact-section {
+        padding: 2rem 1.2rem;
+    }
+
+    .title-line h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .email a {
+        font-size: 0.9rem;
+    }
+
+    .social-media h3 {
+        font-size: 0.9rem;
+    }
+
+    .icons {
+        gap: 0.8rem;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .view-all {
+        font-size: 0.85rem;
+    }
+    }
