@@ -1,5 +1,6 @@
         <template>
-    <section class="projects">
+
+    <section id="proyectos" class="projects">
         <div class="projects-header">
         <div class="title-line">
             <h2><span class="hash">#</span>Proyectos</h2>

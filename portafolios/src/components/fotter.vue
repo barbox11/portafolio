@@ -1,8 +1,8 @@
     <template>
-    <section class="contact-section">
+    <section id="fotter" class="contact-section">
         <div class="contact-header">
         <div class="title-line">
-            <h2><span class="hash">#</span>Proyectos</h2>
+            <h2><span class="hash">#</span>Contáctame</h2>
             <div class="line"></div>
         </div>
         <a href="#" class="view-all">View all →</a>

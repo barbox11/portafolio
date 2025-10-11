@@ -14,9 +14,9 @@
         <nav :class="{ 'active': menuAbierto }">
             <ul>
                 <li><a href="#" :class="{ active: section === 'inicio' }" @click="cambiar('inicio')">#Inicio</a></li>
-                <li><a href="#proyectos" :class="{ active: section === 'trabajos' }" @click="cambiar('trabajos')">#Trabajos</a></li>
-                <li><a href="#sobremi" :class="{ active: section === 'sobre-mi' }" @click="cambiar('sobre-mi')">#Sobre mí</a></li>
-                <li><a href="#fotter" :class="{ active: section === 'contacto' }" @click="cambiar('contacto')">#Contáctame</a></li>
+                <li><a href="#proyectos" :class="{ active: section === 'proyectos' }" @click="cambiar('proyectos')">#Proyectos</a></li>
+                <li><a href="#sobremi" :class="{ active: section === 'sobremi' }" @click="cambiar('sobremi')">#Sobre mí</a></li>
+                <li><a href="#fotter" :class="{ active: section === 'fotter' }" @click="cambiar('fotter')">#Contáctame</a></li>
             </ul>
         </nav>
     </header>
@@ -30,6 +30,8 @@
     })
 
     const menuAbierto = ref(false)
+
+    
 
     function toggleMenu() {
     menuAbierto.value = !menuAbierto.value

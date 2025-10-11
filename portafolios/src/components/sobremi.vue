@@ -1,5 +1,5 @@
     <template>
-    <section class="sobremi-section">
+    <section id="sobremi" class="sobremi-section">
         <!-- Fondo animado de partículas -->
         <div class="particles-background">
         <div

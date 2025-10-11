@@ -106,7 +106,9 @@
         background: white;
         transition: 0.3s;
     }
-
+    .header.scrolled .menu-toggle {
+        top: 0.5rem; 
+    }
     .menu-toggle.active span:nth-child(1) {
         transform: rotate(45deg) translate(8px, 8px);
     }
