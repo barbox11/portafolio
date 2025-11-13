@@ -15,7 +15,7 @@
             <p class="project-tags">{{ proyecto.tags }}</p>
             <h3 class="project-title">{{ proyecto.title }}</h3>
             <p class="project-description">{{ proyecto.desc }}</p>
-            <a href="proyecto.url" class="project-btn">Ver ↔</a>
+            <a :href="proyecto.url" class="project-btn" target="_blank" rel="noopener noreferrer" :aria-label="`Ver ${proyecto.title}`">Ver ↔</a>
         </div>
         </div>
     </section>
