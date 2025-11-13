@@ -15,7 +15,7 @@
             <p class="project-tags">{{ proyecto.tags }}</p>
             <h3 class="project-title">{{ proyecto.title }}</h3>
             <p class="project-description">{{ proyecto.desc }}</p>
-            <a href="#" class="project-btn">Ver ↔</a>
+            <a href="proyecto.url" class="project-btn">Ver ↔</a>
         </div>
         </div>
     </section>
@@ -29,19 +29,23 @@
         img: new URL('../assets/trabajo 1.png', import.meta.url).href,
         title: "Biorutas Web",
         tags: "figma HTML CSS PYTHON",
-        desc: ""
+        desc: "",
+        url: "https://github.com/barbox11/biorutas"
     },
     {
         img: new URL('../assets/trabajo 2.png', import.meta.url).href,
         title: "Libreria api",
         tags: "PHP",
-        desc: ""
+        desc: "",
+        url: "https://github.com/barbox11/libreria_api"
     },
     {
         img: new URL('../assets/trabajo 3.jpg', import.meta.url).href,
         title: "diseño web pedidos",
         tags: "Figma",
-        desc: ""
+        desc: "",
+        url: "https://www.figma.com/design/J13eNdPTISdMBSOhRXtGpj/pedidos?node-id=0-1&t=AvqciLpiwlWJYIDA-1"
+
     }
     ]
     </script>
