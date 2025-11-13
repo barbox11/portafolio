@@ -28,17 +28,20 @@
     {
         img: new URL('../assets/trabajo 1.png', import.meta.url).href,
         title: "Biorutas Web",
-        tags: "figma HTML CSS PYTHON"
+        tags: "figma HTML CSS PYTHON",
+        desc: ""
     },
     {
         img: new URL('../assets/trabajo 2.png', import.meta.url).href,
         title: "Libreria api",
-        tags: "PHP"
+        tags: "PHP",
+        desc: ""
     },
     {
         img: new URL('../assets/trabajo 3.jpg', import.meta.url).href,
         title: "diseño web pedidos",
-        tags: "Figma"
+        tags: "Figma",
+        desc: ""
     }
     ]
     </script>
