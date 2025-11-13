@@ -20,7 +20,7 @@
         <div class="social-media">
             <h3>Media</h3>
             <div class="icons">
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/barbox11" target="_blank">
                 <img src="../assets/Github.png" alt="GitHub" />
             </a>
             <a href="https://discord.com" target="_blank">

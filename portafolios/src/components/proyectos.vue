@@ -26,22 +26,22 @@
     <script setup>
     const proyectos = [
     {
-        img: new URL('../assets/trabajo 1.jpg', import.meta.url).href,
-        title: "ChertNodes",
-        tags: "HTML SCSS Python Flask",
-        desc: "Descripción del proyecto"
+        img: new URL('../assets/trabajo 1.png', import.meta.url).href,
+        title: "Biorutas Web",
+        tags: "figma HTML CSS PYTHON",
+        desc: ""
     },
     {
         img: new URL('../assets/trabajo 2.png', import.meta.url).href,
-        title: "ProtectX",
-        tags: "React Express Discord.js Node.js",
-        desc: "Descripción del proyecto"
+        title: "Libreria api",
+        tags: "PHP",
+        desc: ""
     },
     {
-        img: new URL('../assets/trabajo 3.png', import.meta.url).href,
-        title: "Kahoot Answers Viewer",
-        tags: "CSS Express Node.js",
-        desc: "Descripción del proyecto"
+        img: new URL('../assets/trabajo 3.jpg', import.meta.url).href,
+        title: "diseño web pedidos",
+        tags: "Figma",
+        desc: ""
     }
     ]
     </script>
