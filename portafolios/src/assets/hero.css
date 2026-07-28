@@ -106,6 +106,8 @@
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
     }
 
     .hero-btn:hover {
