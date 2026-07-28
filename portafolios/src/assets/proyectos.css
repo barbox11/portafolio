@@ -96,7 +96,8 @@
 .project-image-wrapper {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  aspect-ratio: 16 / 10;
+  background: #0b1120;
 }
 
 .project-image {
@@ -104,6 +105,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  display: block;
 }
 
 .project-card:hover .project-image {
@@ -113,7 +115,7 @@
 .project-image-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 50%, rgba(3, 10, 22, 0.9));
+  background: linear-gradient(to bottom, transparent 40%, rgba(3, 10, 22, 0.85));
   pointer-events: none;
 }
 
@@ -223,7 +225,7 @@
   .title-line h2 { font-size: 1.3rem; }
   .projects-grid { grid-template-columns: 1fr; gap: 35px; }
   .project-card-body { padding: 18px; }
-  .project-image-wrapper { height: 180px; }
+  .project-image-wrapper { aspect-ratio: 16 / 10; }
   .project-title { font-size: 1.15rem; }
   .project-description { font-size: 0.9rem; }
   .project-btn { padding: 8px 16px; font-size: 0.85rem; }
@@ -234,7 +236,7 @@
   .title-line h2 { font-size: 1.1rem; }
   .view-all { font-size: 0.85rem; }
   .projects-grid { gap: 28px; }
-  .project-image-wrapper { height: 160px; }
+  .project-image-wrapper { aspect-ratio: 16 / 10; }
   .project-card-body { padding: 15px; }
   .project-title { font-size: 1rem; }
   .project-description { font-size: 0.85rem; }
