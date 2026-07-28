@@ -1,12 +1,11 @@
 <template>
   <div id="app">
     <Header :section="section" @changeSection="section = $event" />
-      <Hero @contact="section = 'contacto'" />
-      <Proyectos />
-      <Habilidades />
-      <Sobremi />
-      <Fotter />
-  
+    <Hero @contact="section = 'contacto'" />
+    <Proyectos />
+    <Habilidades />
+    <Sobremi />
+    <Footer />
   </div>
 </template>
 
@@ -17,11 +16,17 @@ import Hero from './components/hero.vue'
 import Proyectos from './components/proyectos.vue'
 import Habilidades from './components/habilidades.vue'
 import Sobremi from './components/sobremi.vue'
-import Fotter from './components/fotter.vue'
+import Footer from './components/footer.vue'
+
+const section = ref('inicio')
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #030a16;

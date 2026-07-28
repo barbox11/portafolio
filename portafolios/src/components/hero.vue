@@ -1,50 +1,41 @@
+<template>
+  <section id="inicio" class="hero" ref="sectionRef">
+    <div class="bubbles">
+      <span v-for="n in 15" :key="n" :style="randomPosition()"></span>
+    </div>
 
-    <template>
-    <section class="hero">
-        <!-- Fondo animado de gotas -->
-        <div class="bubbles">
-        <span v-for="n in 15" :key="n" :style="randomPosition()"></span>
-        </div>
+    <div class="hero-content">
+      <h1 class="from-left neon-text">{{ frontEnd }}</h1>
+      <h2 class="from-right gradient-text">{{ designer }}</h2>
+      <p>
+        Transformo ideas en experiencias digitales únicas, modernas y llenas de vida.
+      </p>
+      <a href="#proyectos" class="hero-btn">Ver proyectos</a>
+    </div>
+  </section>
+</template>
 
-        <div class="hero-content">
-        <h1 class="from-left neon-text">{{ frontEnd }}</h1>
-        <h2 class="from-right gradient-text">{{ designer }}</h2>
-        <p>
-            Transformo ideas en experiencias digitales únicas, modernas y llenas de vida.
-        </p>
-        <button class="hero-btn">Ver proyectos</button>
-        </div>
-    </section>
-    </template>
+<script setup>
+import { ref } from 'vue'
 
-    <script>
-    export default {
-    name: "Hero",
-    data() {
-        return {
-        frontEnd: "Diseñador Web y",
-        designer: "Desarrollador Front-End",
-        };
-    },
-    methods: {
-        // Genera posiciones aleatorias para las gotas
-        randomPosition() {
-        const size = Math.random() * 40 + 10; // tamaño 
-        const left = Math.random() * 100; // posición horizontal
-        const delay = Math.random() * 4; // retraso aleatorio
-        const duration = Math.random() * 10 + 5; // duración variable
+const sectionRef = ref(null)
+const frontEnd = ref('Diseñador Web y')
+const designer = ref('Desarrollador Front-End')
 
-        return {
-            left: `${left}%`,
-            width: `${size}px`,
-            height: `${size}px`,
-            animationDelay: `${delay}s`,
-            animationDuration: `${duration}s`,
-        };
-        },
-    },
-    };
-    </script>
+function randomPosition() {
+  const size = Math.random() * 40 + 10
+  const left = Math.random() * 100
+  const delay = Math.random() * 4
+  const duration = Math.random() * 10 + 5
 
-    <style src="../assets/hero.css" scoped>
-    </style>
+  return {
+    left: `${left}%`,
+    width: `${size}px`,
+    height: `${size}px`,
+    animationDelay: `${delay}s`,
+    animationDuration: `${duration}s`
+  }
+}
+</script>
+
+<style src="../assets/hero.css" scoped></style>

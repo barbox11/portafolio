@@ -3,6 +3,14 @@
     color: #fff;
     padding: 100px 50px;
     font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .projects.is-visible {
+    opacity: 1;
+    transform: translateY(0);
     }
 
     /* Encabezado principal */
