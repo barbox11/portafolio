@@ -13,7 +13,7 @@
         <p class="email">
           <a href="mailto:bcandamil5@gmail.com">bcandamil5@gmail.com</a>
         </p>
-        <p class="role">Web designer and front-end developer</p>
+        <p class="role">Web designer and full-stack developer</p>
       </div>
 
       <div class="social-media">

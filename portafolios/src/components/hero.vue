@@ -20,7 +20,7 @@ import { ref } from 'vue'
 
 const sectionRef = ref(null)
 const frontEnd = ref('Diseñador Web y')
-const designer = ref('Desarrollador Front-End')
+const designer = ref('Desarrollador FullStack')
 
 function randomPosition() {
   const size = Math.random() * 40 + 10

@@ -24,7 +24,10 @@
 
     <div class="sobremi-content">
       <p>
-        ¡Hola, soy Bairon! Soy un desarrollador front-end autodidacta. Puedo desarrollar sitios web responsivos desde cero y convertirlos en experiencias web modernas e intuitivas. Transformar mi creatividad y conocimientos en sitios web ha sido mi pasión durante más de un año. He ayudado a varios clientes a consolidar su presencia online. Siempre me esfuerzo por aprender sobre las tecnologías y frameworks más recientes.
+        ¡Hola! Soy <span class="highlight">Bairon Candamil</span>, <span class="highlight">Ingeniero de Sistemas</span> y <span class="highlight">Desarrollador Full Stack</span>. Me apasiona la tecnología y el aprendizaje constante. Disfruto asumir nuevos desafíos, trabajar en equipo y crear soluciones que aporten valor.
+      </p>
+      <p>
+        Soy una persona comprometida, curiosa y orientada a resultados, siempre en busca de nuevas oportunidades para crecer y generar un impacto positivo a través de mi trabajo.
       </p>
     </div>
   </section>

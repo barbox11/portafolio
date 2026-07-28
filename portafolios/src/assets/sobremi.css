@@ -108,6 +108,20 @@
     position: relative;
     z-index: 1;
     }
+
+    .sobremi-content p {
+    margin-bottom: 1.2rem;
+    }
+
+    .sobremi-content p:last-child {
+    margin-bottom: 0;
+    }
+
+    .highlight {
+    color: #5c6bff;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(92, 107, 255, 0.3);
+    }
 /* ------------ Responsive Design ------------- */
 
     /* Tablets y pantallas medianas */
