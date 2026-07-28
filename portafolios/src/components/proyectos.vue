@@ -10,11 +10,20 @@
 
     <div class="projects-grid">
       <div class="project-card" v-for="(proyecto, index) in proyectos" :key="index">
-        <img :src="proyecto.img" :alt="proyecto.title" class="project-image" loading="lazy" />
-        <p class="project-tags">{{ proyecto.tags }}</p>
-        <h3 class="project-title">{{ proyecto.title }}</h3>
-        <p class="project-description">{{ proyecto.desc }}</p>
-        <a :href="proyecto.url" class="project-btn" target="_blank" rel="noopener noreferrer" :aria-label="`Ver ${proyecto.title}`">Ver ↔</a>
+        <div class="project-image-wrapper">
+          <img :src="proyecto.img" :alt="proyecto.title" class="project-image" loading="lazy" />
+          <div class="project-image-overlay"></div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag" v-for="tag in proyecto.tagsList" :key="tag">{{ tag }}</span>
+          </div>
+          <h3 class="project-title">{{ proyecto.title }}</h3>
+          <p class="project-description">{{ proyecto.desc }}</p>
+          <a :href="proyecto.url" class="project-btn" target="_blank" rel="noopener noreferrer" :aria-label="`Ver ${proyecto.title}`">
+            Ver proyecto <span>↗</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -24,6 +33,11 @@
 import { ref } from 'vue'
 import { proyectos } from '@/data/projects.js'
 import { useIntersectionObserver } from '@/composables/useIntersectionObserver.js'
+
+const proyectosConTags = proyectos.map(p => ({
+  ...p,
+  tagsList: p.tags.split(' ').filter(Boolean)
+}))
 
 const sectionRef = ref(null)
 const { isVisible } = useIntersectionObserver(sectionRef)
